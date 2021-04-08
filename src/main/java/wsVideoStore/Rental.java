@@ -1,4 +1,4 @@
-
+package wsVideoStore;
 public class Rental
 {
   private Movie movie;
@@ -11,6 +11,14 @@ public class Rental
 
   public String getTitle() {
     return movie.getTitle();
+  }
+
+  public int getDaysRented(){
+    return daysRented;
+  }
+
+  public Movie getMovie(){
+    return movie;
   }
 
   public double determineAmount() {
